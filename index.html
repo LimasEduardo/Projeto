@@ -5,15 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Web Site</title>
-    <h1>Olá,Mundo!!!</h1>
-    <p>Estou aqui...</p>
+    <h1>Contador</h1>
+    <p>0</p>
+    <button onclick="ola()">Diminuir</button>
+    <button onclick="beleza()">Aumentar</button>
 </head>
 <body>
-    <style>
-        body {
-            background-color: aqua;
+    <script>
+        var number = 0;
+        function ola(){
+            number = number -1;
+            console.log("teste")
+            MostrarNatela()
+
         }
-    </style>
+        function beleza(){
+            number = number +1;
+            MostrarNatela()
+           
+        
+        }
+         function MostrarNatela(){
+            const p = document.querySelector("p")
+            p.innerText = number
+            console.log(number)
+         }
+        
+
+        
+
+           
+
+
+
+
+
+
+
+
+    </script>
+    
+    
+    
     
 </body>
 </html>
